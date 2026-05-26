@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ComerCiando | Punto de venta simple para tu comercio</title>
+  <meta name="description" content="ComerCiando es un punto de venta de escritorio para almacenes, kioscos y supermercados: vendé rápido, controlá stock, caja y estadísticas en una sola PC.">
+  <meta name="theme-color" content="#0f172a">
+  <meta property="og:title" content="ComerCiando | Vendé rápido. Controlá fácil.">
+  <meta property="og:description" content="Sistema de punto de venta para comercios con ventas rápidas, stock, caja, estadísticas y ticket interno.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/hero-comerciando.jpg">
+  <link rel="icon" href="assets/favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" href="assets/logo-comerciando.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "ComerCiando",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "Windows",
+    "description": "Punto de venta de escritorio para almacenes, kioscos y supermercados."
+  }
+  </script>
+</head>
+<body id="inicio">
+  <header class="header">
+    <nav class="nav container" aria-label="Navegación principal">
+      <a class="brand" href="#inicio" aria-label="ComerCiando, inicio">
+        <span class="brand-mark"><img src="assets/logo-comerciando.png" alt=""></span>
+        <span>
+          <strong>ComerCiando</strong>
+          <small>Vendé rápido. Controlá fácil.</small>
+        </span>
+      </a>
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+        <span class="sr-only">Abrir menú</span>
+      </button>
+      <div class="nav-links" id="nav-links">
+        <a href="#funciones">Funciones</a>
+        <a href="#como-funciona">Cómo funciona</a>
+        <a href="#planes">Planes</a>
+        <a href="#requisitos">Requisitos</a>
+        <a href="#preguntas">Preguntas</a>
+        <a class="btn btn-primary btn-small" href="#contacto">Solicitar demo</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content reveal">
+          <p class="eyebrow">Punto de venta para comercios</p>
+          <h1>Cobrá más rápido. Tené el control de tu negocio.</h1>
+          <p class="hero-copy">
+            ComerCiando simplifica la venta diaria de tu almacén, kiosco o supermercado:
+            escaneá productos, emití tickets internos y revisá tus ventas desde una sola PC.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contacto">Quiero una demo</a>
+            <a class="btn btn-secondary" href="#vista-previa">Ver el sistema</a>
+          </div>
+          <ul class="hero-points" aria-label="Características principales">
+            <li>Ventas por código de barras</li>
+            <li>Importes en pesos argentinos</li>
+            <li>Ticket térmico de 80 mm</li>
+          </ul>
+        </div>
+        <div class="hero-media reveal">
+          <img src="assets/hero-comerciando.jpg" alt="Comerciante utilizando ComerCiando en el mostrador con lector de códigos e impresora térmica" width="1536" height="864">
+          <div class="floating-card">
+            <span class="status-dot"></span>
+            <div>
+              <strong>Venta rápida</strong>
+              <small>Diseñado para usar con teclado y lector</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="proof-strip" aria-label="Resumen del producto">
+      <div class="container proof-grid">
+        <div><strong>Windows</strong><span>Aplicación de escritorio</span></div>
+        <div><strong>SQLite local</strong><span>Tu información en tu PC</span></div>
+        <div><strong>80 mm</strong><span>Ticket interno térmico</span></div>
+        <div><strong>Sin complicaciones</strong><span>Operación clara y veloz</span></div>
+      </div>
+    </section>
+
+    <section class="section problem">
+      <div class="container">
+        <div class="section-heading centered reveal">
+          <p class="eyebrow">Hecho para el mostrador</p>
+          <h2>Menos tiempo buscando. Más tiempo vendiendo.</h2>
+          <p>Cuando hay clientes esperando, cada paso importa. ComerCiando concentra lo esencial en pantallas simples y rápidas de aprender.</p>
+        </div>
+        <div class="benefits-grid">
+          <article class="benefit reveal">
+            <div class="icon">01</div>
+            <h3>Venta ágil</h3>
+            <p>Escaneá el código, repetí el producto para sumar cantidad y terminá la venta desde el teclado.</p>
+          </article>
+          <article class="benefit reveal">
+            <div class="icon">02</div>
+            <h3>Precios claros</h3>
+            <p>Calculá precios sugeridos, redondealos y decidí manualmente el precio final que vas a cobrar.</p>
+          </article>
+          <article class="benefit reveal">
+            <div class="icon">03</div>
+            <h3>Control cotidiano</h3>
+            <p>Consultá ventas, caja y stock actual para tomar decisiones con información de tu propio comercio.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section preview" id="vista-previa">
+      <div class="container preview-grid">
+        <div class="preview-copy reveal">
+          <p class="eyebrow">La caja, sin vueltas</p>
+          <h2>Una pantalla pensada para vender</h2>
+          <p>
+            Total grande, productos visibles y accesos rápidos para las tareas que realmente ocurren en el día a día.
+          </p>
+          <div class="shortcut-list">
+            <span><kbd>F2</kbd> Buscar</span>
+            <span><kbd>F3</kbd> Varios</span>
+            <span><kbd>F5</kbd> Imprimir</span>
+            <span><kbd>F6</kbd> Sin imprimir</span>
+          </div>
+        </div>
+        <div class="app-frame reveal" aria-label="Vista demostrativa de la pantalla de venta">
+          <div class="app-topbar"><span></span><span></span><span></span><label>ComerCiando - Venta rápida</label></div>
+          <div class="app-body">
+            <aside class="app-sidebar">
+              <b>ComerCiando</b>
+              <em>Vendé rápido.</em>
+              <a class="active">Venta</a><a>Productos</a><a>Caja</a><a>Estadísticas</a>
+              <small>Caja: abierta</small>
+            </aside>
+            <div class="app-sale">
+              <div class="scan">Escanear código de barras...</div>
+              <div class="sale-content">
+                <div class="ticket-lines">
+                  <div class="table-header"><span>Cant.</span><span>Producto</span><span>Precio</span></div>
+                  <div><span>2</span><span>Gaseosa Cola 1.5 L</span><span>$ 2.800</span></div>
+                  <div><span>1</span><span>Varios</span><span>$ 850</span></div>
+                  <div><span>1</span><span>Galletitas</span><span>$ 1.200</span></div>
+                </div>
+                <div class="checkout-total">
+                  <small>TOTAL (ARS)</small>
+                  <strong>$ 4.850</strong>
+                  <button>Finalizar venta</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section features" id="funciones">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Todo lo necesario para comenzar</p>
+          <h2>Funciones que acompañan tu operación</h2>
+        </div>
+        <div class="feature-grid">
+          <article class="feature reveal"><span class="feature-icon">▣</span><h3>Productos y stock</h3><p>Cargá productos, editá precios y controlá unidades disponibles sin pantallas innecesarias.</p></article>
+          <article class="feature reveal"><span class="feature-icon">⌁</span><h3>Código de barras</h3><p>Preparado para vender con lector y consolidar automáticamente unidades repetidas.</p></article>
+          <article class="feature reveal"><span class="feature-icon">$</span><h3>Varios y descuentos</h3><p>Resolvé importes manuales y ajustes simples directamente dentro del ticket.</p></article>
+          <article class="feature reveal"><span class="feature-icon">▤</span><h3>Ticket interno</h3><p>Imprimí comprobantes no fiscales en impresoras térmicas comunes de 80 mm.</p></article>
+          <article class="feature reveal"><span class="feature-icon">◷</span><h3>Caja opcional</h3><p>Abrí y cerrá caja cuando lo necesites, sin frenar la venta si decidís no usarla.</p></article>
+          <article class="feature reveal"><span class="feature-icon">↗</span><h3>Estadísticas</h3><p>Revisá totales, tickets promedio, productos vendidos e ingresos por período.</p></article>
+          <article class="feature reveal"><span class="feature-icon">⇅</span><h3>Cambio masivo</h3><p>Actualizá precios de varios productos seleccionados con vista previa antes de confirmar.</p></article>
+          <article class="feature reveal"><span class="feature-icon">✓</span><h3>Backup y exportación</h3><p>Respaldá tu base local y exportá información a CSV cuando lo necesites.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section steps" id="como-funciona">
+      <div class="container steps-grid">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Ponerlo en marcha</p>
+          <h2>Simple desde el primer día</h2>
+          <p>Una solución local para empezar a ordenar la operación sin depender de infraestructura compleja.</p>
+        </div>
+        <ol class="timeline">
+          <li class="reveal"><strong>Configurás tu comercio</strong><p>Nombre, ticket, redondeo de precios e impresora.</p></li>
+          <li class="reveal"><strong>Cargás tus productos</strong><p>Ingresás código, precio final y stock actual.</p></li>
+          <li class="reveal"><strong>Empezás a vender</strong><p>Escaneás, cobrás y guardás cada operación.</p></li>
+          <li class="reveal"><strong>Revisás resultados</strong><p>Consultás ventas y generás respaldos cuando quieras.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section audience" id="para-quien">
+      <div class="container">
+        <div class="section-heading centered reveal">
+          <p class="eyebrow">Comercios reales</p>
+          <h2>Ideal para tu negocio de cercanía</h2>
+        </div>
+        <div class="audience-grid">
+          <article class="reveal"><h3>Almacenes</h3><p>Venta rápida y control básico para el movimiento diario.</p></article>
+          <article class="reveal"><h3>Kioscos</h3><p>Agilidad para atender productos y ventas de importe variable.</p></article>
+          <article class="reveal"><h3>Despensas</h3><p>Precios, stock y tickets en una herramienta ordenada.</p></article>
+          <article class="reveal"><h3>Supermercados chicos</h3><p>Una caja local simple para comenzar a digitalizar ventas.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section pricing" id="planes">
+      <div class="container">
+        <div class="section-heading centered reveal">
+          <p class="eyebrow">Empezá sin compromiso</p>
+          <h2>Probalo gratis y elegí la opción ideal para tu comercio</h2>
+          <p>Te asesoramos según tu forma de trabajo, la instalación que necesites y el acompañamiento que prefieras.</p>
+        </div>
+        <div class="pricing-grid">
+          <article class="price-card reveal">
+            <p class="plan-label">Demostración</p>
+            <h3>Prueba completa</h3>
+            <p class="plan-detail"><strong>7 días gratis</strong><span>Probalo antes de decidir</span></p>
+            <ul>
+              <li>Todas las funciones habilitadas</li>
+              <li>Uso en 1 PC</li>
+              <li>Asistencia para comenzar</li>
+            </ul>
+            <a class="btn btn-secondary" href="#contacto">Solicitar prueba</a>
+          </article>
+          <article class="price-card highlighted reveal">
+            <div class="recommended-plan">Recomendado</div>
+            <p class="plan-label">Licencia anual</p>
+            <h3>ComerCiando Local</h3>
+            <p class="plan-detail"><strong>Plan anual</strong><span>Consultá la propuesta vigente</span></p>
+            <ul>
+              <li>Venta, productos, stock y caja</li>
+              <li>Estadísticas, tickets y backups</li>
+              <li>Soporte y actualizaciones durante el plan</li>
+            </ul>
+            <a class="btn btn-primary" href="#contacto">Consultar este plan</a>
+          </article>
+          <article class="price-card reveal">
+            <p class="plan-label">Licencia permanente</p>
+            <h3>Compra definitiva</h3>
+            <p class="plan-detail"><strong>Pago único</strong><span>Para usarlo en una PC</span></p>
+            <ul>
+              <li>Uso permanente en esa PC</li>
+              <li>Configuración inicial acompañada</li>
+              <li>Opciones de soporte y actualización</li>
+            </ul>
+            <a class="btn btn-secondary" href="#contacto">Pedir información</a>
+          </article>
+        </div>
+        <div class="setup-offer reveal">
+          <div>
+            <p class="plan-label">Servicio opcional</p>
+            <h3>Instalación y puesta en marcha</h3>
+            <p>Configuración inicial, impresora térmica, carga por CSV, explicación de uso y primer backup.</p>
+          </div>
+          <a class="btn btn-primary" href="#contacto">Coordinar instalación</a>
+        </div>
+        <p class="pricing-note reveal">Cada licencia corresponde a una PC. ComerCiando emite ticket interno no fiscal. Consultá la modalidad y el soporte más conveniente para tu comercio.</p>
+      </div>
+    </section>
+
+    <section class="section requirements" id="requisitos">
+      <div class="container requirements-grid">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Requisitos del sistema</p>
+          <h2>Listo para trabajar en tu PC</h2>
+          <p>ComerCiando se instala en una computadora Windows y funciona localmente, sin depender de internet para cobrar o consultar tus ventas.</p>
+          <div class="recommended-system">
+            <span>Configuración recomendada</span>
+            <strong>Windows 10 u 11 de 64 bits</strong>
+          </div>
+          <p class="compatibility-note"><strong>Importante:</strong> no es compatible con Windows XP.</p>
+        </div>
+        <div class="requirement-list">
+          <article class="requirement reveal">
+            <span class="requirement-icon">PC</span>
+            <div><strong>Sistema operativo</strong><p>Windows 10 u 11 de 64 bits.</p></div>
+          </article>
+          <article class="requirement reveal">
+            <span class="requirement-icon">RAM</span>
+            <div><strong>Memoria</strong><p>4 GB de RAM o más.</p></div>
+          </article>
+          <article class="requirement reveal">
+            <span class="requirement-icon">80</span>
+            <div><strong>Impresora opcional</strong><p>Térmica de 80 mm compatible con Windows.</p></div>
+          </article>
+          <article class="requirement reveal">
+            <span class="requirement-icon">USB</span>
+            <div><strong>Lector opcional</strong><p>Lector de código de barras USB tipo teclado.</p></div>
+          </article>
+          <article class="requirement reveal">
+            <span class="requirement-icon">OFF</span>
+            <div><strong>Sin internet obligatorio</strong><p>La operación y los datos quedan en la PC del comercio.</p></div>
+          </article>
+          <article class="requirement reveal">
+            <span class="requirement-icon">1</span>
+            <div><strong>Uso inicial</strong><p>Diseñado para funcionar en una sola computadora.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section faq" id="preguntas">
+      <div class="container faq-grid">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Preguntas frecuentes</p>
+          <h2>Lo que necesitás saber</h2>
+        </div>
+        <div class="questions">
+          <details class="reveal" open>
+            <summary>¿Necesito internet para usarlo?</summary>
+            <p>El sistema está diseñado para funcionar en una sola PC con base de datos local SQLite.</p>
+          </details>
+          <details class="reveal">
+            <summary>¿Imprime factura fiscal?</summary>
+            <p>No. ComerCiando emite tickets internos no fiscales para impresoras térmicas comunes de 80 mm.</p>
+          </details>
+          <details class="reveal">
+            <summary>¿Puedo vender sin imprimir?</summary>
+            <p>Sí. Podés finalizar una venta con o sin impresión de ticket.</p>
+          </details>
+          <details class="reveal">
+            <summary>¿Puedo respaldar la información?</summary>
+            <p>Sí. Incluye backup manual de la base local y exportaciones CSV básicas.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta" id="contacto">
+      <div class="container cta-grid">
+        <div class="cta-copy reveal">
+          <p class="eyebrow">Dale claridad a tu caja</p>
+          <h2>Conocé ComerCiando en una demostración</h2>
+          <p>Contanos qué tipo de comercio tenés y coordiná una presentación del sistema.</p>
+        </div>
+        <form class="lead-form reveal" id="lead-form">
+          <label>
+            Nombre
+            <input type="text" name="nombre" placeholder="Tu nombre" required>
+          </label>
+          <label>
+            Comercio
+            <input type="text" name="comercio" placeholder="Almacén, kiosco, supermercado...">
+          </label>
+          <label>
+            Localidad
+            <input type="text" name="localidad" placeholder="¿Dónde está tu comercio?">
+          </label>
+          <label>
+            Consulta
+            <textarea name="consulta" rows="3" placeholder="Me interesa conocer ComerCiando."></textarea>
+          </label>
+          <button class="btn btn-primary" type="submit">Solicitar demo por WhatsApp</button>
+          <p class="form-note" id="form-message">Respuesta personalizada para tu comercio.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="brand footer-brand">
+        <span class="brand-mark"><img src="assets/logo-comerciando.png" alt=""></span>
+        <span><strong>ComerCiando</strong><small>Vendé rápido. Controlá fácil.</small></span>
+      </div>
+      <p>Punto de venta de escritorio para comercios. Ticket interno no fiscal.</p>
+      <a href="#inicio">Volver arriba ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,9 +1,15 @@
-// Completar con el numero comercial en formato internacional, sin + ni espacios.
-// Ejemplo Argentina: "5491112345678".
+// Numero comercial en formato internacional, sin + ni espacios.
 const WHATSAPP_NUMBER = "542214769949";
 
 const menuButton = document.querySelector(".menu-button");
 const navigation = document.querySelector(".nav-links");
+
+document.querySelectorAll(".js-whatsapp").forEach((link) => {
+  const message = link.dataset.message || "Hola, quiero conocer ComerCiando.";
+  if (WHATSAPP_NUMBER) {
+    link.href = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+  }
+});
 
 menuButton?.addEventListener("click", () => {
   const isOpen = navigation.classList.toggle("open");
@@ -36,10 +42,7 @@ form?.addEventListener("submit", async (event) => {
   const data = new FormData(form);
   const name = data.get("nombre")?.toString().trim() || "";
   const business = data.get("comercio")?.toString().trim() || "mi comercio";
-  const location = data.get("localidad")?.toString().trim();
-  const query = data.get("consulta")?.toString().trim() || "Me interesa conocer ComerCiando.";
-  const locationText = location ? ` en ${location}` : "";
-  const message = `Hola, soy ${name}. Tengo ${business}${locationText}. ${query} Quisiera coordinar una demo.`;
+  const message = `Hola, soy ${name}. Tengo ${business}. Quiero probar ComerCiando gratis por 7 dias y coordinar la puesta en marcha.`;
 
   if (WHATSAPP_NUMBER) {
     window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`, "_blank", "noopener");
@@ -48,9 +51,9 @@ form?.addEventListener("submit", async (event) => {
 
   try {
     await navigator.clipboard.writeText(message);
-    formMessage.textContent = "Consulta preparada y copiada. Configurá tu WhatsApp comercial antes de publicar.";
+    formMessage.textContent = "Consulta preparada y copiada. Configura tu WhatsApp comercial antes de publicar.";
   } catch {
-    formMessage.textContent = "Configurá tu número de WhatsApp comercial antes de publicar la página.";
+    formMessage.textContent = "Configura tu numero de WhatsApp comercial antes de publicar la pagina.";
   }
   formMessage.classList.add("feedback");
 });

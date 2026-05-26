@@ -3,13 +3,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ComerCiando | Punto de venta simple para tu comercio</title>
-  <meta name="description" content="ComerCiando es un punto de venta de escritorio para almacenes, kioscos y supermercados: vendé rápido, controlá stock, caja y estadísticas en una sola PC.">
+  <title>ComerCiando | Ventas, fiados y proveedores para tu comercio</title>
+  <meta name="description" content="Vendé rápido y controlá caja, stock, fiados y pagos a proveedores desde una sola PC. Punto de venta para almacenes y kioscos. Probalo gratis por 7 días.">
   <meta name="theme-color" content="#0f172a">
-  <meta property="og:title" content="ComerCiando | Vendé rápido. Controlá fácil.">
-  <meta property="og:description" content="Sistema de punto de venta para comercios con ventas rápidas, stock, caja, estadísticas y ticket interno.">
+  <meta property="og:title" content="ComerCiando | Ventas, fiados y proveedores para tu comercio">
+  <meta property="og:description" content="Vendé rápido y controlá caja, stock, fiados y pagos a proveedores desde una sola PC. Probalo gratis por 7 días.">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="assets/hero-comerciando.jpg">
+  <meta property="og:image" content="https://simonkoenig.github.io/ComerCiando-Page/assets/hero-comerciando.jpg">
   <link rel="icon" href="assets/favicon.ico" sizes="any">
   <link rel="apple-touch-icon" href="assets/logo-comerciando.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,7 +23,7 @@
     "name": "ComerCiando",
     "applicationCategory": "BusinessApplication",
     "operatingSystem": "Windows",
-    "description": "Punto de venta de escritorio para almacenes, kioscos y supermercados."
+    "description": "Punto de venta de escritorio para almacenes, kioscos y autoservicios chicos, con control de fiados, proveedores y prueba gratis por 7 dias."
   }
   </script>
 </head>
@@ -43,11 +43,12 @@
       </button>
       <div class="nav-links" id="nav-links">
         <a href="#funciones">Funciones</a>
+        <a href="#control">Cuentas</a>
         <a href="#como-funciona">Cómo funciona</a>
         <a href="#planes">Planes</a>
         <a href="#requisitos">Requisitos</a>
         <a href="#preguntas">Preguntas</a>
-        <a class="btn btn-primary btn-small" href="#contacto">Solicitar demo</a>
+        <a class="btn btn-primary btn-small js-whatsapp" data-message="Hola, quiero probar ComerCiando gratis por 7 dias en mi comercio." href="https://wa.me/542214769949?text=Hola%2C%20quiero%20probar%20ComerCiando%20gratis%20por%207%20dias%20en%20mi%20comercio." target="_blank" rel="noopener">Probar gratis</a>
       </div>
     </nav>
   </header>
@@ -56,30 +57,40 @@
     <section class="hero">
       <div class="container hero-grid">
         <div class="hero-content reveal">
-          <p class="eyebrow">Punto de venta para comercios</p>
+          <p class="eyebrow">Punto de venta para comercios de cercanía</p>
           <h1>Cobrá más rápido. Tené el control de tu negocio.</h1>
           <p class="hero-copy">
-            ComerCiando simplifica la venta diaria de tu almacén, kiosco o supermercado:
-            escaneá productos, emití tickets internos y revisá tus ventas desde una sola PC.
+            Para almacenes, kioscos, despensas y autoservicios chicos. Cobrá con lector,
+            llevá quién te debe y registrá pagos a proveedores, sin depender de internet.
           </p>
           <div class="hero-actions">
-            <a class="btn btn-primary" href="#contacto">Quiero una demo</a>
-            <a class="btn btn-secondary" href="#vista-previa">Ver el sistema</a>
+            <a class="btn btn-primary js-whatsapp" data-message="Hola, quiero probar ComerCiando gratis por 7 dias en mi comercio." href="https://wa.me/542214769949?text=Hola%2C%20quiero%20probar%20ComerCiando%20gratis%20por%207%20dias%20en%20mi%20comercio." target="_blank" rel="noopener">Probar gratis por 7 días</a>
+            <a class="btn btn-secondary" href="#vista-previa">Ver cómo funciona</a>
           </div>
-          <ul class="hero-points" aria-label="Características principales">
-            <li>Ventas por código de barras</li>
-            <li>Importes en pesos argentinos</li>
-            <li>Ticket térmico de 80 mm</li>
+          <ul class="trial-benefits" aria-label="Beneficios de la prueba">
+            <li><span class="trial-check" aria-hidden="true">&#10003;</span> Prueba completa por 7 días</li>
+            <li><span class="trial-check" aria-hidden="true">&#10003;</span> Sin tarjeta</li>
+            <li><span class="trial-check" aria-hidden="true">&#10003;</span> Soporte por WhatsApp</li>
           </ul>
+          <div class="hero-includes">
+            <p class="hero-includes-title">Incluye desde el primer día</p>
+            <div class="hero-feature-grid" aria-label="Funciones destacadas">
+              <div class="hero-feature"><span aria-hidden="true">&#9638;</span><strong>Código de barras</strong></div>
+              <div class="hero-feature"><span aria-hidden="true">$</span><strong>Fiados pendientes</strong></div>
+              <div class="hero-feature"><span aria-hidden="true">&#8645;</span><strong>Pagos a proveedores</strong></div>
+              <div class="hero-feature"><span aria-hidden="true">&#9636;</span><strong>Ticket de 80 mm</strong></div>
+            </div>
+          </div>
         </div>
         <div class="hero-media reveal">
           <img src="assets/hero-comerciando.jpg" alt="Comerciante utilizando ComerCiando en el mostrador con lector de códigos e impresora térmica" width="1536" height="864">
           <div class="floating-card">
-            <span class="status-dot"></span>
-            <div>
-              <strong>Venta rápida</strong>
-              <small>Diseñado para usar con teclado y lector</small>
+            <div class="floating-card-status">
+              <span class="status-dot"></span>
+              <small>Control diario</small>
             </div>
+            <strong>Caja y cuentas claras</strong>
+            <p>Ventas, fiados y proveedores</p>
           </div>
         </div>
       </div>
@@ -87,10 +98,10 @@
 
     <section class="proof-strip" aria-label="Resumen del producto">
       <div class="container proof-grid">
-        <div><strong>Windows</strong><span>Aplicación de escritorio</span></div>
-        <div><strong>SQLite local</strong><span>Tu información en tu PC</span></div>
-        <div><strong>80 mm</strong><span>Ticket interno térmico</span></div>
-        <div><strong>Sin complicaciones</strong><span>Operación clara y veloz</span></div>
+        <div><strong>Datos en tu PC</strong><span>Backup y exportación incluidos</span></div>
+        <div><strong>Sin internet</strong><span>Podés vender aun sin conexión</span></div>
+        <div><strong>Fiados</strong><span>Deudas y pagos parciales</span></div>
+        <div><strong>Proveedores</strong><span>Cuentas a pagar y egresos</span></div>
       </div>
     </section>
 
@@ -98,8 +109,8 @@
       <div class="container">
         <div class="section-heading centered reveal">
           <p class="eyebrow">Hecho para el mostrador</p>
-          <h2>Menos tiempo buscando. Más tiempo vendiendo.</h2>
-          <p>Cuando hay clientes esperando, cada paso importa. ComerCiando concentra lo esencial en pantallas simples y rápidas de aprender.</p>
+          <h2>Menos cuentas sueltas. Más control del negocio.</h2>
+          <p>Cuando atendés, fiás y pagás mercadería, todo tiene que quedar claro. ComerCiando reúne la operación diaria en pantallas simples y rápidas de aprender.</p>
         </div>
         <div class="benefits-grid">
           <article class="benefit reveal">
@@ -109,13 +120,13 @@
           </article>
           <article class="benefit reveal">
             <div class="icon">02</div>
-            <h3>Precios claros</h3>
-            <p>Calculá precios sugeridos, redondealos y decidí manualmente el precio final que vas a cobrar.</p>
+            <h3>Empezá sin cargar todo a mano</h3>
+            <p>Importá productos desde CSV, actualizá precios y definí el valor final que vas a cobrar.</p>
           </article>
           <article class="benefit reveal">
             <div class="icon">03</div>
-            <h3>Control cotidiano</h3>
-            <p>Consultá ventas, caja y stock actual para tomar decisiones con información de tu propio comercio.</p>
+            <h3>Movimientos bajo control</h3>
+            <p>Registrá fiados, pagos a proveedores y cierres de caja con los ingresos y egresos reales del día.</p>
           </article>
         </div>
       </div>
@@ -124,16 +135,17 @@
     <section class="section preview" id="vista-previa">
       <div class="container preview-grid">
         <div class="preview-copy reveal">
-          <p class="eyebrow">La caja, sin vueltas</p>
-          <h2>Una pantalla pensada para vender</h2>
+          <p class="eyebrow">Así trabajás con ComerCiando</p>
+          <h2>Una caja simple, pensada para atender rápido</h2>
           <p>
-            Total grande, productos visibles y accesos rápidos para las tareas que realmente ocurren en el día a día.
+            Escaneá, corregí cantidades y finalizá una venta con teclado. Total grande y acciones claras para el mostrador.
           </p>
           <div class="shortcut-list">
             <span><kbd>F2</kbd> Buscar</span>
             <span><kbd>F3</kbd> Varios</span>
             <span><kbd>F5</kbd> Imprimir</span>
             <span><kbd>F6</kbd> Sin imprimir</span>
+            <span><kbd>F11</kbd> Fiado</span>
           </div>
         </div>
         <div class="app-frame reveal" aria-label="Vista demostrativa de la pantalla de venta">
@@ -142,7 +154,7 @@
             <aside class="app-sidebar">
               <b>ComerCiando</b>
               <em>Vendé rápido.</em>
-              <a class="active">Venta</a><a>Productos</a><a>Caja</a><a>Estadísticas</a>
+              <a class="active">Venta</a><a>Productos</a><a>Fiados</a><a>Proveedores</a><a>Caja</a>
               <small>Caja: abierta</small>
             </aside>
             <div class="app-sale">
@@ -166,21 +178,69 @@
       </div>
     </section>
 
+    <section class="section finance" id="control">
+      <div class="container finance-grid">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Control financiero cotidiano</p>
+          <h2>Sabé quién te debe y a quién tenés que pagarle</h2>
+          <p>
+            ComerCiando no solo registra ventas: te ayuda a controlar cobros pendientes
+            y obligaciones con tus proveedores.
+          </p>
+          <ul class="finance-points">
+            <li>Finalizá una venta como fiado y descontá stock normalmente.</li>
+            <li>Registrá pagos parciales hasta saldar la deuda del cliente.</li>
+            <li>Anotá deudas y pagos a proveedores, incluso pagos directos.</li>
+            <li>Cerrá caja considerando ingresos y egresos del día.</li>
+          </ul>
+        </div>
+        <div class="finance-cards">
+          <article class="finance-card reveal">
+            <span class="finance-icon">+</span>
+            <div>
+              <p>Fiados de clientes</p>
+              <h3>Vendiste hoy, cobrás después</h3>
+              <small>Saldo pendiente, pagos parciales y alertas por antigüedad.</small>
+            </div>
+          </article>
+          <article class="finance-card reveal">
+            <span class="finance-icon negative">-</span>
+            <div>
+              <p>Proveedores</p>
+              <h3>Deudas y pagos registrados</h3>
+              <small>Vencimientos, pagos parciales y egresos asociados a caja.</small>
+            </div>
+          </article>
+          <article class="finance-card summary reveal">
+            <p>Al cerrar caja</p>
+            <div class="finance-formula">
+              <span>Ventas cobradas</span>
+              <b>+</b>
+              <span>Pagos de fiados</span>
+              <b>-</b>
+              <span>Pagos a proveedores</span>
+            </div>
+            <strong>= Neto esperado de caja</strong>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <section class="section features" id="funciones">
       <div class="container">
         <div class="section-heading reveal">
-          <p class="eyebrow">Todo lo necesario para comenzar</p>
-          <h2>Funciones que acompañan tu operación</h2>
+          <p class="eyebrow">Todo lo necesario para operar mejor</p>
+          <h2>De la venta al control de tus cuentas</h2>
         </div>
         <div class="feature-grid">
-          <article class="feature reveal"><span class="feature-icon">▣</span><h3>Productos y stock</h3><p>Cargá productos, editá precios y controlá unidades disponibles sin pantallas innecesarias.</p></article>
+          <article class="feature reveal"><span class="feature-icon">▣</span><h3>Productos y stock</h3><p>Editá precios en lote y controlá unidades disponibles sin pantallas innecesarias.</p></article>
           <article class="feature reveal"><span class="feature-icon">⌁</span><h3>Código de barras</h3><p>Preparado para vender con lector y consolidar automáticamente unidades repetidas.</p></article>
           <article class="feature reveal"><span class="feature-icon">$</span><h3>Varios y descuentos</h3><p>Resolvé importes manuales y ajustes simples directamente dentro del ticket.</p></article>
           <article class="feature reveal"><span class="feature-icon">▤</span><h3>Ticket interno</h3><p>Imprimí comprobantes no fiscales en impresoras térmicas comunes de 80 mm.</p></article>
-          <article class="feature reveal"><span class="feature-icon">◷</span><h3>Caja opcional</h3><p>Abrí y cerrá caja cuando lo necesites, sin frenar la venta si decidís no usarla.</p></article>
-          <article class="feature reveal"><span class="feature-icon">↗</span><h3>Estadísticas</h3><p>Revisá totales, tickets promedio, productos vendidos e ingresos por período.</p></article>
-          <article class="feature reveal"><span class="feature-icon">⇅</span><h3>Cambio masivo</h3><p>Actualizá precios de varios productos seleccionados con vista previa antes de confirmar.</p></article>
-          <article class="feature reveal"><span class="feature-icon">✓</span><h3>Backup y exportación</h3><p>Respaldá tu base local y exportá información a CSV cuando lo necesites.</p></article>
+          <article class="feature reveal"><span class="feature-icon">+</span><h3>Fiados</h3><p>Vendé fiado, registrá cobros parciales y detectá deudas pendientes antiguas.</p></article>
+          <article class="feature reveal"><span class="feature-icon">-</span><h3>Proveedores</h3><p>Llevá cuentas a pagar, vencimientos y pagos asociados a tu caja.</p></article>
+          <article class="feature reveal"><span class="feature-icon">⇅</span><h3>Importación CSV</h3><p>Cargá o actualizá muchos productos desde una planilla sin empezar uno por uno.</p></article>
+          <article class="feature reveal"><span class="feature-icon">↗</span><h3>Caja y estadísticas</h3><p>Revisá ventas, fiados, egresos a proveedores y respaldá la información en CSV.</p></article>
         </div>
       </div>
     </section>
@@ -189,14 +249,14 @@
       <div class="container steps-grid">
         <div class="section-heading reveal">
           <p class="eyebrow">Ponerlo en marcha</p>
-          <h2>Simple desde el primer día</h2>
-          <p>Una solución local para empezar a ordenar la operación sin depender de infraestructura compleja.</p>
+          <h2>Te acompañamos para empezar</h2>
+          <p>Configuramos lo esencial para que puedas probar ventas y control de cuentas con la operación real de tu negocio.</p>
         </div>
         <ol class="timeline">
-          <li class="reveal"><strong>Configurás tu comercio</strong><p>Nombre, ticket, redondeo de precios e impresora.</p></li>
-          <li class="reveal"><strong>Cargás tus productos</strong><p>Ingresás código, precio final y stock actual.</p></li>
-          <li class="reveal"><strong>Empezás a vender</strong><p>Escaneás, cobrás y guardás cada operación.</p></li>
-          <li class="reveal"><strong>Revisás resultados</strong><p>Consultás ventas y generás respaldos cuando quieras.</p></li>
+          <li class="reveal"><strong>Coordinás tu prueba</strong><p>Te enviamos acceso por 7 días para una PC.</p></li>
+          <li class="reveal"><strong>Importás tus productos</strong><p>Usás CSV o cargás manualmente los primeros artículos.</p></li>
+          <li class="reveal"><strong>Configurás caja y cuentas</strong><p>Dejás listo el ticket, fiados y proveedores que necesitás seguir.</p></li>
+          <li class="reveal"><strong>Decidís con experiencia real</strong><p>Probás ventas, cobros pendientes y pagos antes de elegir licencia.</p></li>
         </ol>
       </div>
     </section>
@@ -211,7 +271,7 @@
           <article class="reveal"><h3>Almacenes</h3><p>Venta rápida y control básico para el movimiento diario.</p></article>
           <article class="reveal"><h3>Kioscos</h3><p>Agilidad para atender productos y ventas de importe variable.</p></article>
           <article class="reveal"><h3>Despensas</h3><p>Precios, stock y tickets en una herramienta ordenada.</p></article>
-          <article class="reveal"><h3>Supermercados chicos</h3><p>Una caja local simple para comenzar a digitalizar ventas.</p></article>
+          <article class="reveal"><h3>Autoservicios chicos</h3><p>Una caja local simple para ordenar ventas y stock.</p></article>
         </div>
       </div>
     </section>
@@ -225,15 +285,16 @@
         </div>
         <div class="pricing-grid">
           <article class="price-card reveal">
-            <p class="plan-label">Demostración</p>
+            <p class="plan-label">Prueba gratis</p>
             <h3>Prueba completa</h3>
             <p class="plan-detail"><strong>7 días gratis</strong><span>Probalo antes de decidir</span></p>
             <ul>
               <li>Todas las funciones habilitadas</li>
+              <li>Fiados y cuentas a pagar incluidos</li>
               <li>Uso en 1 PC</li>
               <li>Asistencia para comenzar</li>
             </ul>
-            <a class="btn btn-secondary" href="#contacto">Solicitar prueba</a>
+            <a class="btn btn-secondary js-whatsapp" data-message="Hola, quiero solicitar la prueba completa de ComerCiando por 7 dias." href="https://wa.me/542214769949?text=Hola%2C%20quiero%20solicitar%20la%20prueba%20completa%20de%20ComerCiando%20por%207%20dias." target="_blank" rel="noopener">Solicitar prueba</a>
           </article>
           <article class="price-card highlighted reveal">
             <div class="recommended-plan">Recomendado</div>
@@ -242,10 +303,11 @@
             <p class="plan-detail"><strong>Plan anual</strong><span>Consultá la propuesta vigente</span></p>
             <ul>
               <li>Venta, productos, stock y caja</li>
-              <li>Estadísticas, tickets y backups</li>
+              <li>Fiados, proveedores y estadísticas</li>
+              <li>Tickets, backups y exportaciones</li>
               <li>Soporte y actualizaciones durante el plan</li>
             </ul>
-            <a class="btn btn-primary" href="#contacto">Consultar este plan</a>
+            <a class="btn btn-primary js-whatsapp" data-message="Hola, quiero consultar la licencia anual de ComerCiando con soporte y actualizaciones." href="https://wa.me/542214769949?text=Hola%2C%20quiero%20consultar%20la%20licencia%20anual%20de%20ComerCiando%20con%20soporte%20y%20actualizaciones." target="_blank" rel="noopener">Consultar este plan</a>
           </article>
           <article class="price-card reveal">
             <p class="plan-label">Licencia permanente</p>
@@ -253,19 +315,20 @@
             <p class="plan-detail"><strong>Pago único</strong><span>Para usarlo en una PC</span></p>
             <ul>
               <li>Uso permanente en esa PC</li>
+              <li>Control de fiados y proveedores</li>
               <li>Configuración inicial acompañada</li>
               <li>Opciones de soporte y actualización</li>
             </ul>
-            <a class="btn btn-secondary" href="#contacto">Pedir información</a>
+            <a class="btn btn-secondary js-whatsapp" data-message="Hola, quiero consultar la licencia permanente de ComerCiando para una PC." href="https://wa.me/542214769949?text=Hola%2C%20quiero%20consultar%20la%20licencia%20permanente%20de%20ComerCiando%20para%20una%20PC." target="_blank" rel="noopener">Pedir información</a>
           </article>
         </div>
         <div class="setup-offer reveal">
           <div>
             <p class="plan-label">Servicio opcional</p>
             <h3>Instalación y puesta en marcha</h3>
-            <p>Configuración inicial, impresora térmica, carga por CSV, explicación de uso y primer backup.</p>
+            <p>Configuración inicial, impresora térmica, carga por CSV, fiados/proveedores, explicación de uso y primer backup.</p>
           </div>
-          <a class="btn btn-primary" href="#contacto">Coordinar instalación</a>
+          <a class="btn btn-primary js-whatsapp" data-message="Hola, quiero coordinar instalacion y puesta en marcha de ComerCiando." href="https://wa.me/542214769949?text=Hola%2C%20quiero%20coordinar%20instalacion%20y%20puesta%20en%20marcha%20de%20ComerCiando." target="_blank" rel="noopener">Coordinar instalación</a>
         </div>
         <p class="pricing-note reveal">Cada licencia corresponde a una PC. ComerCiando emite ticket interno no fiscal. Consultá la modalidad y el soporte más conveniente para tu comercio.</p>
       </div>
@@ -335,6 +398,26 @@
             <summary>¿Puedo respaldar la información?</summary>
             <p>Sí. Incluye backup manual de la base local y exportaciones CSV básicas.</p>
           </details>
+          <details class="reveal">
+            <summary>¿Puedo importar los productos que ya tengo?</summary>
+            <p>Sí. Podés preparar una planilla CSV desde Excel e importar productos y precios para empezar más rápido.</p>
+          </details>
+          <details class="reveal">
+            <summary>¿Puedo registrar clientes que compran fiado?</summary>
+            <p>Sí. Podés finalizar una venta como fiado, registrar pagos parciales y consultar quiénes tienen saldo pendiente.</p>
+          </details>
+          <details class="reveal">
+            <summary>¿Puedo controlar lo que debo a proveedores?</summary>
+            <p>Sí. Podés cargar deudas, vencimientos y pagos parciales o directos; los pagos asociados a caja se reflejan como egresos.</p>
+          </details>
+          <details class="reveal">
+            <summary>¿Cómo funciona la prueba de 7 días?</summary>
+            <p>Te entregamos una licencia temporal para una PC con todas las funciones habilitadas. Después decidís si querés continuar.</p>
+          </details>
+          <details class="reveal">
+            <summary>¿Me ayudan a instalarlo?</summary>
+            <p>Sí. Podés solicitar instalación, configuración inicial, impresora térmica y acompañamiento para tu primera puesta en marcha.</p>
+          </details>
         </div>
       </div>
     </section>
@@ -342,9 +425,15 @@
     <section class="cta" id="contacto">
       <div class="container cta-grid">
         <div class="cta-copy reveal">
-          <p class="eyebrow">Dale claridad a tu caja</p>
-          <h2>Conocé ComerCiando en una demostración</h2>
-          <p>Contanos qué tipo de comercio tenés y coordiná una presentación del sistema.</p>
+          <p class="eyebrow">Empezá sin compromiso</p>
+          <h2>Probá una caja que también ordena tus cuentas</h2>
+          <p>Contanos qué tipo de comercio tenés y coordinamos 7 días de prueba por WhatsApp.</p>
+          <ul class="cta-promises">
+            <li>Todas las funciones habilitadas</li>
+            <li>Fiados y proveedores incluidos en la prueba</li>
+            <li>Sin tarjeta ni suscripción automática</li>
+            <li>Acompañamiento para comenzar</li>
+          </ul>
         </div>
         <form class="lead-form reveal" id="lead-form">
           <label>
@@ -353,18 +442,10 @@
           </label>
           <label>
             Comercio
-            <input type="text" name="comercio" placeholder="Almacén, kiosco, supermercado...">
+            <input type="text" name="comercio" placeholder="Almacén, kiosco, despensa...">
           </label>
-          <label>
-            Localidad
-            <input type="text" name="localidad" placeholder="¿Dónde está tu comercio?">
-          </label>
-          <label>
-            Consulta
-            <textarea name="consulta" rows="3" placeholder="Me interesa conocer ComerCiando."></textarea>
-          </label>
-          <button class="btn btn-primary" type="submit">Solicitar demo por WhatsApp</button>
-          <p class="form-note" id="form-message">Respuesta personalizada para tu comercio.</p>
+          <button class="btn btn-primary" type="submit">Solicitar prueba por WhatsApp</button>
+          <p class="form-note" id="form-message">Te respondemos para coordinar la instalación de prueba.</p>
         </form>
       </div>
     </section>
@@ -380,6 +461,11 @@
       <a href="#inicio">Volver arriba ↑</a>
     </div>
   </footer>
+
+  <a class="whatsapp-float js-whatsapp" data-message="Hola, quiero conocer ComerCiando y probarlo por 7 dias." href="https://wa.me/542214769949?text=Hola%2C%20quiero%20conocer%20ComerCiando%20y%20probarlo%20por%207%20dias." target="_blank" rel="noopener" aria-label="Consultar ComerCiando por WhatsApp">
+    <span>WhatsApp</span>
+    Consultar
+  </a>
 
   <script src="script.js"></script>
 </body>

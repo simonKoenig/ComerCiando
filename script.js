@@ -34,6 +34,60 @@ const observer = new IntersectionObserver((entries) => {
 
 document.querySelectorAll(".reveal").forEach((element) => observer.observe(element));
 
+const promoPlayer = document.querySelector("[data-promo-player]");
+const promoScenes = Array.from(document.querySelectorAll("[data-promo-scene]"));
+const promoDots = Array.from(document.querySelectorAll("[data-promo-dot]"));
+const promoToggle = document.querySelector("[data-promo-toggle]");
+const promoToggleLabel = document.querySelector("[data-promo-toggle-label]");
+let promoIndex = 0;
+let promoTimer = null;
+
+const showPromoScene = (index) => {
+  promoIndex = index;
+  promoScenes.forEach((scene, sceneIndex) => scene.classList.toggle("active", sceneIndex === index));
+  promoDots.forEach((dot, dotIndex) => dot.classList.toggle("active", dotIndex === index));
+};
+
+const pausePromo = () => {
+  window.clearInterval(promoTimer);
+  promoTimer = null;
+  promoPlayer?.classList.remove("is-playing");
+  promoToggle?.setAttribute("aria-label", "Reproducir demostración");
+  if (promoToggleLabel) promoToggleLabel.textContent = "Reproducir";
+};
+
+const playPromo = () => {
+  window.clearInterval(promoTimer);
+  promoPlayer?.classList.add("is-playing");
+  promoToggle?.setAttribute("aria-label", "Pausar demostración");
+  if (promoToggleLabel) promoToggleLabel.textContent = "Pausar demo";
+  promoTimer = window.setInterval(() => showPromoScene((promoIndex + 1) % promoScenes.length), 4200);
+};
+
+if (promoPlayer && promoScenes.length) {
+  showPromoScene(0);
+  if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    playPromo();
+  } else {
+    pausePromo();
+  }
+
+  promoToggle?.addEventListener("click", () => {
+    if (promoTimer) {
+      pausePromo();
+    } else {
+      playPromo();
+    }
+  });
+
+  promoDots.forEach((dot, index) => {
+    dot.addEventListener("click", () => {
+      showPromoScene(index);
+      if (promoTimer) playPromo();
+    });
+  });
+}
+
 const form = document.querySelector("#lead-form");
 const formMessage = document.querySelector("#form-message");
 

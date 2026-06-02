@@ -107,7 +107,7 @@ form?.addEventListener("submit", async (event) => {
     await navigator.clipboard.writeText(message);
     formMessage.textContent = "Consulta preparada y copiada. Configura tu WhatsApp comercial antes de publicar.";
   } catch {
-    formMessage.textContent = "Configura tu numero de WhatsApp comercial antes de publicar la pagina.";
+    formMessage.textContent = "Configura tu número de WhatsApp comercial antes de publicar la pagina.";
   }
   formMessage.classList.add("feedback");
 });
